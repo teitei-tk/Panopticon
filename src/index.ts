@@ -1,1 +1,1 @@
-const a = '';
+require('dotenv').config();
