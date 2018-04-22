@@ -60,4 +60,4 @@ typings/
 .firebaserc
 
 ./build/
-./functions/lib/
+functions/lib/
