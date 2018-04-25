@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import * as functions from 'firebase-functions';
 import * as express from 'express';
 

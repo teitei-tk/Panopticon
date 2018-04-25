@@ -26,9 +26,6 @@
     "func:logs": "firebase functions:log"
   },
   "devDependencies": {
-    "@types/dotenv": "^4.0.3",
-    "@types/node": "^9.6.5",
-    "dotenv": "^5.0.1",
     "firebase-tools": "^3.18.4",
     "prettier": "^1.12.0",
     "tslint": "^5.9.1",
