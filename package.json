@@ -16,13 +16,20 @@
   "scripts": {
     "precommit": "lint-staged",
     "fix": "tslint --fix -p ./tsconfig.json",
-    "lint": "tslint -p ./tsconfig.json --type-check"
+    "lint": "tslint -p ./tsconfig.json --type-check",
+    "build": "yarn run tsc",
+    "serve": "yarn run firebase serve --only functions,hosting",
+    "deploy": "yarn run func:deploy",
+    "func:shell": "yarn --cwd ./functions run build && firebase functions:shell",
+    "func:start": "yarn --cwd ./functions run shell",
+    "func:deploy": "firebase deploy --only functions",
+    "func:logs": "firebase functions:log"
   },
   "devDependencies": {
+    "firebase-tools": "^3.18.4",
     "prettier": "^1.12.0",
     "tslint": "^5.9.1",
-    "tslint-plugin-prettier": "^1.3.0",
-    "typescript": "^2.8.1"
+    "tslint-plugin-prettier": "^1.3.0"
   },
   "dependencies": {}
 }

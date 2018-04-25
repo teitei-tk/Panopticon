@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "module": "system",
-    "outDir": "./build",
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./functions/lib",
     "strict": true,
     "declaration": true,
+    "lib": ["es6", "dom"],
+    "noImplicitAny": false
   },
   "include": [
-    "src/**/*"
+    "functions/src/**/*"
   ],
   "exclude": [
-    "node_modules/",
+    "**node_modules/**",
     "**/*.spec.ts"
   ]
 }
